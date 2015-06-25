@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     @IBAction func add(sender: UIButton) {
         
-        let op1:Int=op1Textfield.text.toInt()!
-        let op2:Int=op2TextField.text.toInt()!
+        let op1:Int=Int(op1Textfield.text!)!
+        let op2:Int=Int(op2TextField.text!)!
         let result:Int=op1+op2
         resultLabel.text="\(result)"
         
